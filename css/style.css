@@ -1,34 +1,219 @@
 :root{
     --logo-color:#95E1D3;
-    --accent-color:#F38181;
-    --title-color:#333;
+    --title-color:#333333;
     --text-color:#B6B6B6;
-    --text-button-color:#FFF;
+    --hover-color:#F38181;
 }
+
+ul{list-style: none;}
+
+
+
 body{
     margin: 0 auto;
-    font-family: 'Montserrat', sans-serif;
-    width: 1200px;
     border: 2px solid red;
 }
+
+
+
+.container{
+    width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+    a{
+        text-decoration: none;
+    }
+
+    /* 
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;  
+     */
+        
+
+     /* header */
+.header{
+    
+    padding-top: 17px;
+}
+
+.header-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    
 .logo{
+    color: var(--logo-color);
+    font-family: Montserrat;
     font-size: 30px;
     font-weight: 700;
-    color: var(--logo-color)
+}  
+
+.navigation-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 55px;
 }
-.navigation-link{
-    font-size: 14px;
+
+.navigation-item{
     color: var(--logo-color);
-    text-transform: uppercase;  
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
 }
-.navigation-link:hover,
-.navigation-link:focus{
-    color: var(--accent-color);
+
+.navigation-item:hover,
+.navigation-item:focus{
+    color: var(--hover-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    border-bottom:  3px solid var(--hover-color);
+    padding-bottom: 10px;
 }
+
+.span-wrap{
+    display: flex;
+    justify-content: center;
+}
+
 .slogon{
-    font-family: 'Kaushan Script', cursive;
-    font-size: 24px;
     color: var(--title-color);
-    margin-bottom: 20px;
+    font-family: Kaushan Script;
+    font-size: 24px;
+    font-weight: 400;    
+    margin-bottom: 20px;    
+}
+
+.title{
+    color: var(--title-color);
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
     text-align: center;
+    margin-bottom: 40px;
+}
+
+.line{
+    width: 60px;
+    height: 4px;
+    background-color: var(--hover-color);
+    margin-bottom: 65px;
+    margin: 0 auto;
+}
+
+.card-img{
+    margin-right: 18px;
+}
+
+.card-title{
+    color: var(--title-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.card-text{
+    color: var(--text-color);
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;   
+}
+
+.our-team-list{
+    display: flex;
+}
+
+.our-team-text{
+    color: var(--text-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 27px;
+}
+
+.our-team-card{
+    margin: 30px;
+    width: 380px;
+}
+
+.our-team-img{
+    margin-bottom: 30px;
+}
+
+.work{
+    padding-top: 68px;
+}
+
+.worker-name{
+    color: var(--title-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 11px;
+    text-align: center;
+}
+
+.our-team{
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.profesion-wrap{
+    display: flex;
+    justify-content: center;
+}
+
+.profesion{
+    color: var(--text-color);
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;   
+    text-align: center;
+}
+
+.foot-text{
+    color: var(--title-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.Laaqiq{
+    color: var(--hover-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.footer-container{
+    border-top: 1px solid var(--text-color);
+}
+
+.foot-btn{
+    background-color: var(--logo-color);
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 11px 38px;
+    border: none;
+    text-transform: uppercase;
+    margin-left: -20px;
+}
+
+.input{
+    padding: 8px 145px 8px 10px;
 }
